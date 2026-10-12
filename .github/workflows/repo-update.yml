@@ -1,15 +1,5 @@
 name: Update repo
 on:
-  push:
-    branches:
-    - master
-    paths:
-    - '.github/workflows/repo-update.yml'
-  pull_request:
-    paths:
-    - '.github/workflows/repo-update.yml'
-  schedule:
-    - cron:  '*/30 * * * *'
   workflow_dispatch:
 
 concurrency:
